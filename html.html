@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            alert('Hello World')
+            document.write("<h2>Hello World</h2>")
+            var x = 10
+            var katakata = "x = " +x
+            if(x < 100){
+                document.write("<h2>Masuk pa eko</h2>")
+            }
+            var onClick = () => {
+                var input = document.getElementById('nama').value 
+                alert('Input adalah '+input)
+                }
+
+            var onclik2 = () => {
+                var input2 = parseInt(document.getElementById('angka').value)
+                var input1 = parseInt(document.getElementById('angka2').value)
+                alert(input1 + input2)
+            }
+            var gethari = () => {
+                var input = document.getElementById('tebak').value
+                
+            }
+        </script>
+    </head>
+    <body>
+        <input id='angka' type="number">
+        <input id='angka2' type="numnber">
+        <button onclick="onclik2()">Tambah</button>
+        <br>
+        <br>
+        <button onclick="gethari()">date</button>
+    </body>
+</html>
